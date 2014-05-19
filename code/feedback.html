@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>feedback</title>
+<link rel="stylesheet" type="text/css" href="student.css"/>
+</head>
+<body>
+
+	<div id="student">
+	<div align="center" class="img" >
+	<table>
+	<tr>
+	<td ><img src="images/logo.png" height="80px" width="80px"></td>
+	<td><h2 class="logo">National Institute of Technology Surathakal, Karnataka 575025<br/>Hostel Administration System</h2></td>
+	</tr>
+	</table>
+	</div>
+	
+	<div class="link">
+	<table>
+	<tr>
+	<td><a class="st" href="student.php">Home</a></td>
+	<td><a class="st" href="room_student.php">Room</a></td>
+	<td><a class="st" href="mess_student.php">Mess</a></td>
+	<td><a class="st" href="complaint_student.html">Complaint</a></td>
+	<td><a class="st_opted" href="feedback.html">Feedback</a></td>
+	<td><a class="st" href="redirect.php?action=logout">Logout</a></td>
+	</tr>
+	</table>
+	</div>
+	<div class="profile">
+	<table>
+	<tr>
+	
+	
+	<td >
+		<fieldset class="login" >
+				<legend>Feedback</legend>
+				<form method="post" action="feedback_submit.php">
+				<table>
+				<tr>
+				<td><h2>Enter Your Feedback<h2></td>
+				</tr>
+				</table>
+				<br/>
+				<textarea name="feedback" rows="10" cols="70" placeholder="enter your feedback(1000 characters)"></textarea><br/>
+				<input type="submit"/>
+				
+				</form>
+				</fieldset>
+	
+	
+	</td>
+	</tr>
+	</table>
+	
+	</div>
+	
+	
+	</div>
+
+
+</body>
+</html>

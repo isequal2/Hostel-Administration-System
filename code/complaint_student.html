@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Add Complaint</title>
+<link rel="stylesheet" type="text/css" href="student.css"/>
+
+
+<script Language="JavaScript">
+function validate(form)
+{
+var c=-1;
+for(var i=0;i<5;i++)
+{
+	if(form.complaint_type[i].checked)
+		c=0;
+}
+if(c==-1)
+{
+	
+	alert("select some complaint type");
+	return false;
+}
+	//document.getElementByName('pointc').innerHTML="Please select complaint type";
+
+/*
+if(x.value=="")
+	{
+		document.getElementByName('pointc').innerHTML="Please select complaint type";
+		x.value="";
+		x.focus();
+		return false;
+	}
+else	
+document.getElementById('pointc').innerHTML="";
+*/
+}
+</script>
+</head>
+<body>
+
+	<div id="student">
+	<div align="center" class="img" >
+	<table>
+	<tr>
+	<td ><img src="images/logo.png" height="80px" width="80px"></td>
+	<td><h2 class="logo">National Institute of Technology Surathakal, Karnataka 575025<br/>Hostel Administration System</h2></td>
+	</tr>
+	</table>
+	</div>
+	
+	<div class="link">
+	<table>
+	<tr>
+	<td><a class="st" href="student.php">Home</a></td>
+	<td><a class="st" href="room_student.php">Room</a></td>
+	<td><a class="st" href="mess_student.php">Mess</a></td>
+	<td><a class="st_opted" href="complaint_student.html">Complaint</a></td>
+	<td><a class="st" href="feedback.html">Feedback</a></td>
+	<td><a class="st" href="redirect.php?action=logout">Logout</a></td>
+	</tr>
+	</table>
+	</div>
+	<div class="profile">
+	<table>
+	<tr>
+	
+	
+		<td >
+				<fieldset class="login" >
+				<legend>Complaint</legend>
+				<form method="post" action="complaint_submit.php">
+				<br/>
+				<textarea name="complaint_text" rows="10" cols="70" placeholder="enter your complaint With Your Probable Department(1000 characters)"></textarea><br/>
+				<input type="submit" onClick="return validate(this.form)" />
+				
+				</form>
+				</fieldset>
+		</td>
+	</tr>
+	</table>
+	
+	</div>
+	
+	
+	</div>
+
+
+</body>
+</html>

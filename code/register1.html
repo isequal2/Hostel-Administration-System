@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Register</title>
+<script type="text/javascript" src="register.js"></script>
+<link rel="stylesheet" type="text/css" href="register.css"/>
+</head>
+<body>
+
+
+<div id="student">
+	<div align="center" class="img" >
+	<table>
+	<tr>
+	<td ><img src="images/logo.png" height="80px" width="80px"></td>
+	<td><h2 class="logo">National Institute of Technology Surathakal, Karnataka 575025<br/>Hostel Administration System</h2></td>
+	</tr>
+	</table>
+	</div>
+	
+	<div class="profile">
+	<table align="center">
+	<tr>
+		<td>
+		
+				<form id="form" action="register.php" method="post" enctype="multipart/form-data">
+				<fieldset class="register">
+				<legend>Student Registration</legend>
+					<div align="center">
+						<table >
+							<tr>
+			<td>Roll No<i>*</i></td>
+			<td><input type="text" id="roll_no" name="roll_no"></td><td><i id="pointroll"></i></td>
+			</tr>
+			<tr>
+				<td>First name<i>*</i></td>
+				<td><input type="text" id="fname" name="fname"></td><td><i id="pointfname"></i></td>
+			</tr>
+			<tr>
+				<td>Mid Name</td>
+				<td><input type="text" id="mname" name="mname"></td><td><i id="pointmname"></i></td>
+			</tr>
+			<tr>
+				<td>Last Name<i>*</i></td>
+				<td><input type="text" id="lname" name="lname"></td><td><i id="pointlname"></i></td>
+			</tr>
+			<tr>
+				<td>Gender<i>*</i></td>
+				<td><select id="gender" name="gender">
+					<option value="M">male</option> 
+					<option value="F">female</option>
+					</select></td><td><i id="pointgender"></i></td>
+			</tr>
+			<tr>
+				<td>Date of birth<i>*</i></td>
+				<td><input type="date" id="date" name="date"></td><td><i id="pointdob"></i></td>
+			</tr>
+			<tr>
+				<td>Branch<i>*</i></td>
+				<td><select id="branch" name="branch">
+					<option value="Information Technology">Information Technology</option>
+					<select/><td><i id="pointbranch" ></i></td>
+			</tr>
+			<tr>
+				<td>College ID<i>*</i></td>
+				<td><input type="file" id="college_id" name="college_id"></td><td><i id="pointdob"></i></td>
+			</tr>
+<button type="submit" id="submit"  >Register</button>
+					</div>
+					</fieldset>
+				</form>
+		</td>		
+		</tr>
+		</table>
+		</div>
+</body>
+</html>

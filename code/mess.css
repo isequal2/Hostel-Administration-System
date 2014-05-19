@@ -1,0 +1,97 @@
+body {
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background-color: #262F38;
+}
+
+#student{
+
+  margin-left:170px;
+  margin-right:170px;
+  }
+div.img{
+  
+  padding-left: 10px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-right:100px;
+  border:1px solid #0000ff;
+  text-align:center;
+  background-color:lightblue;
+
+}
+.logo{
+padding-left: 100px;
+}
+
+div.link{
+  border:1px solid #0000ff;
+  text-align:center;
+  background-color:white;
+}
+.st_opted
+{
+display:block;
+font-weight:bold;
+color:#FFFFFF;
+background-color:yellow;
+width:188px;
+height:25px;
+text-align:center;
+padding:4px;
+text-decoration:none;
+
+}
+a.st{
+display:block;
+font-weight:bold;
+color:#FFFFFF;
+background-color:#98bf21;
+width:188px;
+height:25px;
+text-align:center;
+padding:4px;
+text-decoration:none;
+}
+
+#profile_pic{
+padding-left: 10px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-right:10px;
+  border:1px solid #0000ff;
+  text-align:center;
+  background-color:red;
+
+}
+
+
+div.profile{
+  padding-top:50px;
+  padding-bottom:50px;
+  border:1px solid #0000ff;
+  text-align:center;
+  background-color:white;
+}
+
+/*css exclusive to login page*/
+
+.login{
+border:1px solid red;
+
+}
+
+
+.mess{
+display:block;
+font-weight:bold;
+color:#FFFFFF;
+background-color:#98bf21;
+width:188px;
+height:25px;
+text-align:center;
+padding:4px;
+text-decoration:none;
+}

@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="student.css"/>
+<script type="text/javascript" src="login.js"></script>
+</head>
+<body>
+<form id="form" method="post" action="login.php">
+<div id="student">
+	<div align="center" class="img" >
+	<table>
+	<tr>
+	<td ><img src="images/logo.png" height="80px" width="80px"></td>
+	<td><h2 class="logo">National Institute of Technology Surathakal, Karnataka 575025<br/>Hostel Administration System</h2></td>
+	</tr>
+	</table>
+	</div>
+	
+	<!--
+	<div class="link">
+	<table>
+	<tr>
+	<td><a class="st_opted" href="student.php">Home</a></td>
+	<td><a class="st" href="admin.html">Room</a></td>
+	<td><a class="st" href="student.php">Mess</a></td>
+	<td><a class="st" href="student.php">Complaint</a></td>
+	<td><a class="st" href="student.php">FAQ</a></td>
+	</tr>
+	</table>
+	</div>
+	-->
+	<div class="profile" >
+	<table align="center">
+	<tr>
+	<td>
+
+
+
+		<fieldset class="login">
+		<legend class="login">Login</legend>
+			<div>
+				<table>
+					<tr>
+					<td>Roll No<i>*</i></td>
+					<td><input type="text" id="user" name="user"  pattern="[0-9]{6}" placeholder="111111"></td><td><i id="pointuser"></i></td>
+					</tr>
+					<tr>
+						<td>Password<i>*</i></td>
+						<td><input type="password" id="password" name="password" ></td><td><i id="pointpassword"></i></td>
+					</tr>
+				</table>
+				<input type="submit" id="submit1" onClick="return validate()" value="submit"></input>
+				<button type="submit" formaction="register.html" id="register" >Register</button>
+			</div>
+		</fieldset>
+	</td>
+	</tr>
+	<tr>
+	<td><div align="right"><h4><a href="faqpage.html" style="background-color:white"><img src="images/faq.jpg"></a></h4></div></td>
+	</tr>
+	</table>
+	</div>
+</form>
+</body>
+</html>

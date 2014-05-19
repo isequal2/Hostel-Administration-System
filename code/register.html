@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Register</title>
+<script type="text/javascript" src="register.js"></script>
+<link rel="stylesheet" type="text/css" href="register.css"/>
+</head>
+<body>
+
+
+<div id="student">
+	<div align="center" class="img" >
+	<table>
+	<tr>
+	<td ><img src="images/logo.png" height="80px" width="80px"></td>
+	<td><h2 class="logo">National Institute of Technology Surathakal, Karnataka 575025<br/>Hostel Administration System</h2></td>
+	</tr>
+	</table>
+	</div>
+	
+	<div class="profile">
+	<table align="center">
+	<tr>
+		<td>
+		
+				<form id="form" action="register.php" method="post" enctype="multipart/form-data">
+				<fieldset class="register">
+				<legend>Student Registration</legend>
+					<div align="center">
+						<table >
+							<tr>
+			<td>Roll No<i>*</i></td>
+			<td><input type="text" id="roll_no" name="roll_no" pattern="[0-9]{6}" placeholder="111111" ></td><td><i id="pointroll"></i></td>
+			</tr>
+			<tr>	
+				<td>First name<i>*</i></td>
+				<td><input type="text" id="fname" name="fname" pattern="[A-Za-z]{0,20}" placeholder="Shivam" ></td><td><i id="pointfname"></i></td>
+			</tr>
+			<tr>
+				<td>Mid Name</td>
+				<td><input type="text" id="mname" name="mname" pattern="[A-Za-z]{0,20}" placeholder="Shivam" ></td><td><i id="pointmname"></i></td>
+			</tr>
+			<tr>
+				<td>Last Name<i>*</i></td>
+				<td><input type="text" id="lname" name="lname" pattern="[A-Za-z]{0,20}" placeholder="Shivam" ></td><td><i id="pointlname"></i></td>
+			</tr>
+			<tr>
+				<td>Gender<i>*</i></td>
+				<td><select id="gender" name="gender">
+					<option value="M">male</option> 
+					<option value="F">female</option>
+					</select></td><td><i id="pointgender"></i></td>
+			</tr>
+			<tr>
+				<td>Date of birth<i>*</i></td>
+				<td><input type="date" id="date" name="date"></td><td><i id="pointdob"></i></td>
+			</tr>
+			<tr>
+				<td>Phone<i>*</i></td>
+				<td><input type="text" id="phone"  name="phone" required></td><td><i id="pointphone"></i></td>
+			</tr>
+			
+			<tr>
+				<td>Email<i>*</i></td>
+				<td><input type="email" id="email" name="email" required></td><td><i id="pointemail"></i></td>
+			</tr>
+			<tr>
+				<td>College ID<i>*</i></td>
+				<td><input type="file" id="college_id" name="college_id"></td><td><i id="pointdob"></i></td>
+			</tr>
+			<tr>
+				<td>Year<i>*</i></td>
+				<td><input type="text" id="year" name="year" pattern="[1-4]" placeholder="1-4" ></td><td><i id="pointyear"></i></td>
+			</tr>
+			<tr>
+				<td>Password<i></i></td>
+				<td><input type="password" id="new_pass" name="new_pass"></td><td><i id="pointpass1"></i></td>
+			</tr>
+			<tr>
+				<td>Confirm Password<i></i></td>
+				<td><input type="password" id="new_pass1" name="new_pass1"></td><td><i id="pointpass2"></i></td>
+			</tr>
+				</table>
+					<input type="submit" id="submit" value="Register"/>				
+				</div>
+					</fieldset>
+				</form>
+	
+		</table>
+		</div>
+</body>
+</html>
